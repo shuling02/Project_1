@@ -599,3 +599,188 @@ img {
         font-size: 13px;
     }
 }
+
+
+/* Swimming lessons page*/
+
+.lessons-hero {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/which-lesson-is-best.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 45px 20px;
+}
+
+.lessons-hero h1 {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.lessons-intro {
+    padding: 35px 15px 20px;
+    background: #FFFFFF;
+}
+
+.lessons-intro h2,
+.lesson-detail h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.lesson-detail {
+    padding: 35px 20px;
+    background: #FFFFFF;
+}
+
+.lesson-detail .container {
+    max-width: 900px;
+}
+
+.lesson-detail p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.lesson-detail-alt {
+    background: #F1F4F3;
+}
+
+
+/* Swimming Lessons footer */
+.lessons-footer {
+    background-color: #F1F0EF;
+    background-image: url("../images/footer-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.lessons-footer-main {
+    min-height: 190px;
+    padding: 30px 15px 20px;
+    text-align: center;
+}
+
+.lessons-footer-logo {
+    display: block;
+    margin: 0 auto 35px;
+}
+
+.lessons-footer-logo img {
+    display: block;
+    width: 165px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lessons-footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 14px;
+}
+
+.lessons-footer-links a {
+    color: #333333;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.lessons-footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.lessons-footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #1678B8;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.lessons-footer-locations {
+    border-top: 1px solid rgba(100, 100, 100, 0.2);
+    padding: 18px 15px 25px;
+    text-align: center;
+}
+
+.lessons-footer-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 18px;
+}
+
+.lessons-footer-location strong {
+    font-size: 11px;
+}
+
+.lessons-footer-location a {
+    color: #555555;
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+    .lessons-footer-main {
+        padding-top: 25px;
+    }
+
+    .lessons-footer-logo {
+        margin-bottom: 25px;
+    }
+
+    .lessons-footer-links {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .lessons-footer-locations {
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .lessons-hero {
+        min-height: 190px;
+        padding: 35px 15px;
+    }
+
+    .lessons-hero h1 {
+        font-size: 30px;
+    }
+
+    .lessons-intro h2,
+    .lesson-detail h2 {
+        font-size: 25px;
+    }
+
+    .lesson-detail {
+        padding: 28px 15px;
+    }
+
+    .lesson-detail p {
+        font-size: 14px;
+    }
+}
+
