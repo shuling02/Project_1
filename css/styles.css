@@ -1034,3 +1034,88 @@ img {
     margin: 0;
     text-align: center;
 }
+
+
+/* Adult Programs page */
+.adult-hero {
+    width: 100%;
+    height: 175px;
+    background-image: url("../images/lap-swimming.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.adult-hero h1 {
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.adult-content {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px 12px;
+}
+
+.adult-content h2 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    margin: 0 0 20px;
+    color: #444;
+}
+
+.adult-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.adult-text p {
+    margin: 12px 0;
+}
+
+.adult-locations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.adult-locations li {
+    margin: 3px 0;
+}
+
+.adult-locations a {
+    color: #00a9e8;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .adult-hero {
+        height: 160px;
+    }
+
+    .adult-hero h1 {
+        font-size: 28px;
+    }
+
+    .adult-content {
+        padding: 0 16px 20px;
+    }
+
+    .adult-content h2 {
+        font-size: 21px;
+    }
+}
+
