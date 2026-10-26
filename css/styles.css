@@ -909,3 +909,101 @@ img {
         font-size: 55px;
     }
 }
+
+
+
+/* summer swim camps page */
+
+.summer-camp-hero {
+    min-height: 245px;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+        url("../images/summer-swim-camps.jpeg");
+    background-size: cover;
+    background-position: center 42%;
+}
+
+.summer-camp-hero h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.summer-camp-content {
+    padding: 0 0 10px;
+    background-color: #FFFFFF;
+}
+
+.summer-camp-content h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: #444444;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.summer-camp-copy {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.summer-camp-copy p {
+    margin-bottom: 12px;
+}
+
+.summer-camp-copy .camp-location-heading {
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+.camp-location-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.camp-location-list li {
+    margin-bottom: 3px;
+}
+
+.camp-location-list a {
+    color: #03A9F4;
+    text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+    .summer-camp-hero {
+        min-height: 160px;
+        background-position: center;
+    }
+
+    .summer-camp-hero h1 {
+        font-size: 28px;
+    }
+
+    .summer-camp-content {
+        padding: 18px 0 25px;
+    }
+
+    .summer-camp-content h2 {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    .summer-camp-copy {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
