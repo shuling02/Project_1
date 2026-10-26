@@ -1,0 +1,410 @@
+
+
+:root {
+    --navy: #1A2E38;
+    --dark-gray: #444444;
+    --gray: #757575;
+    --blue: #03B1F4;
+    --white: #FFFFFF;
+    --light-gray: #E4EAEA;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Bodoni Moda", Georgia, serif;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Navigation */
+.site-navbar {
+    background-color: var(--navy);
+    min-height: 74px;
+    padding: 10px 4%;
+}
+
+.site-logo {
+    display: block;
+    width: 195px;
+    height: auto;
+}
+
+.site-navbar .navbar-nav {
+    gap: 2px;
+}
+
+.site-navbar .nav-link {
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 10px 7px;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    color: var(--blue);
+}
+
+/* Register button */
+.btn-register,
+.btn-hero {
+    display: inline-block;
+    color: var(--blue);
+    background-color: var(--white);
+    border: 0;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 11px 22px;
+    white-space: nowrap;
+}
+
+.btn-register:hover,
+.btn-hero:hover {
+    color: var(--navy);
+    background-color: var(--light-gray);
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero-section {
+    min-height: 558px;
+    background-image: url("../images/home.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-hero {
+    padding: 14px 20px;
+    min-width: 143px;
+}
+
+
+.section-spacing {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.intro-section {
+    background-color: var(--white);
+}
+
+.intro-section h2 {
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 35px 0 20px;
+}
+
+.footer-logo {
+    max-height: 70px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 767.98px) {
+    .site-navbar {
+        padding: 12px 6%;
+    }
+
+    .site-logo {
+        width: 195px;
+    }
+
+    .site-navbar .navbar-nav {
+        align-items: stretch;
+        padding-top: 12px;
+    }
+
+    .site-navbar .nav-link {
+        font-size: 14px;
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    .hero-section {
+        min-height: 540px;
+        padding: 40px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 1.25;
+        margin-bottom: 28px;
+    }
+
+    .section-spacing {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .btn-hero {
+        min-width: 0;
+        padding: 12px 16px;
+    }
+}
+
+
+/* Promotional banners */
+.promotions-section {
+    padding: 12px 15px 20px;
+    background-color: #FFFFFF;
+}
+
+.promotions-section .container {
+    max-width: 620px;
+}
+
+.promotion-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.promotion-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hands On Teaching */
+.teaching-section {
+    display: flex;
+    align-items: stretch;
+    min-height: 430px;
+    background-color: #FFFFFF;
+}
+
+.teaching-content {
+    flex: 0 0 50%;
+    padding: 35px 5% 35px 6%;
+    font-size: 12px;
+}
+
+.teaching-content h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.teaching-content h3 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.teaching-content p {
+    line-height: 1.6;
+}
+
+.teaching-content ul {
+    padding-left: 18px;
+}
+
+.teaching-content li {
+    margin-bottom: 5px;
+}
+
+.teaching-cta-text {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.teaching-image {
+    flex: 0 0 50%;
+    min-height: 430px;
+    background-image: url("../images/home-hands-on-teaching.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Find a location */
+.locations-section {
+    display: flex;
+    min-height: 360px;
+    background-color: #1A2E38;
+    background-image: url("../images/home-our-locations-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.locations-copy {
+    flex: 0 0 50%;
+    padding: 45px 5%;
+    text-align: center;
+}
+
+.locations-copy h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.locations-copy h3 {
+    color: #FFFFFF;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.locations-copy p {
+    max-width: 330px;
+    margin: 12px auto 20px;
+    font-size: 11px;
+}
+
+.locations-map {
+    flex: 0 0 50%;
+    background-image: url("../images/home-our-locations-map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+
+/* Awards */
+.awards-section {
+    padding: 35px 15px 45px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.awards-section h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.awards-grid {
+    max-width: 430px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 18px 20px;
+}
+
+.awards-grid img {
+    display: block;
+    width: 100%;
+    max-width: 85px;
+    max-height: 85px;
+    object-fit: contain;
+}
+
+/* Responsive sections */
+@media (max-width: 767.98px) {
+    .promotions-section {
+        padding: 10px 15px;
+    }
+
+    .teaching-section {
+        flex-direction: column;
+    }
+
+    .teaching-content {
+        flex-basis: auto;
+        padding: 30px 25px;
+        font-size: 13px;
+    }
+
+    .teaching-image {
+        flex-basis: auto;
+        min-height: 300px;
+    }
+
+    .locations-section {
+        flex-direction: column;
+    }
+
+    .locations-copy {
+        flex-basis: auto;
+        padding: 35px 25px;
+    }
+
+    .locations-map {
+        flex-basis: auto;
+        min-height: 220px;
+        margin: 0 20px 25px;
+    }
+
+    .awards-section {
+        padding: 30px 20px;
+    }
+
+    .awards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px 15px;
+    }
+
+    .awards-grid img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
