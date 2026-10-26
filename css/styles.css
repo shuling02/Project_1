@@ -143,19 +143,97 @@ img {
 }
 
 .site-footer {
-    background-color: var(--navy);
-    color: var(--white);
-    padding: 35px 0 20px;
+    background: #F1F4F3;
+    color: #333333;
+    font-size: 11px;
 }
 
-.footer-logo {
-    max-height: 70px;
-    width: auto;
-    margin-bottom: 15px;
+.footer-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 30px 18px;
 }
 
-.site-footer p {
-    margin-bottom: 0;
+.footer-brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.footer-links a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #03B1F4;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 24px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #1474B8;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-locations {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D8DEDC;
+    text-align: center;
+}
+
+.footer-locations strong {
+    font-size: 11px;
+}
+
+.footer-locations p {
+    margin-top: 6px;
+    font-size: 10px;
+}
+
+.footer-partners {
+    min-height: 45px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 
@@ -193,6 +271,17 @@ img {
     .section-spacing {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+     .footer-links {
+        gap: 12px;
+    }
+
+    .footer-locations {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-bottom {
+        text-align: center;
     }
 }
 
@@ -406,5 +495,107 @@ img {
     .awards-grid img {
         max-width: 80px;
         max-height: 80px;
+    }
+}
+
+
+/* About page */
+
+.about-hero {
+    min-height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/about-us-hero.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+}
+
+.about-hero h1 {
+    color: #FFFFFF;
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Philosophy */
+.about-philosophy {
+    background-image: url("../images/about-our-philosophy-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.about-philosophy h2,
+.about-good-job h2,
+
+.about-philosophy p,
+.about-good-job p,
+.family-feedback p {
+    max-width: 650px;
+    margin: 0 auto 12px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* We Do A Pretty Good Job */
+.about-good-job {
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/about-we-do-a-pretty-good-job-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.about-good-job .container {
+    max-width: 760px;
+}
+
+.family-feedback-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #03B1F4;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.family-feedback-link:hover {
+    color: #1A2E38;
+}
+
+@media (max-width: 767.98px) {
+    .about-hero {
+        min-height: 160px;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-philosophy,
+    .about-good-job {
+        padding: 35px 20px;
+    }
+
+    .about-philosophy h2,
+    .about-good-job h2,
+    .family-feedback h2 {
+        font-size: 27px;
+    }
+
+    .about-philosophy p,
+    .about-good-job p,
+    .family-feedback p {
+        font-size: 13px;
     }
 }
