@@ -194,6 +194,30 @@
             </div>
         </section>
 
+        
+        <!-- Vue component: Quick Swimming Program Guide -->
+        <section id="vue-program-guide" class="container py-5">
+            <h2 class="text-center mb-4">Quick Swimming Program Guide</h2>
+
+            <div class="card mx-auto p-4" style="max-width: 600px;">
+                <label for="program-select">Choose a program:</label>
+
+                <select id="program-select"
+                        class="form-control mb-3"
+                        v-model="selectedProgram">
+                    <option value="lessons">Swimming Lessons</option>
+                    <option value="swim">Swim Programs</option>
+                    <option value="adult">Adult Lap Swimming</option>
+                </select>
+
+                <div class="alert alert-info mb-0">
+                    <h5>{{ programInfo[selectedProgram].title }}</h5>
+                    <p class="mb-0">{{ programInfo[selectedProgram].description }}</p>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Shared footer -->
@@ -255,5 +279,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.min.js"></script>
+
+    <script>
+        new Vue({
+            el: "#vue-program-guide",
+
+            data: {
+                selectedProgram: "lessons",
+
+                programInfo: {
+                    lessons: {
+                        title: "Swimming Lessons",
+                        description: "Explore swimming lessons to build water confidence and improve swimming skills."
+                    },
+
+                    swim: {
+                        title: "Swim Programs",
+                        description: "Explore swim programs designed to help swimmers develop their abilities."
+                    },
+
+                    adult: {
+                        title: "Adult Lap Swimming",
+                        description: "Enjoy lap swimming as part of your fitness and training routine."
+                    }
+                }
+            }
+        });
+    </script>
+
 </body>
 </html>
