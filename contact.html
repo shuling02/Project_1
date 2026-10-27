@@ -9,6 +9,8 @@
 
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -145,6 +147,53 @@
                 </div>
             </div>
         </section>
+
+        <!-- jQuery UI components -->
+        <section class="container py-5" id="contact-faqs">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+            <!-- Component 1: jQuery UI Tabs -->
+            <div id="faq-tabs">
+                <ul>
+                    <li><a href="#faq-general">General Questions</a></li>
+                    <li><a href="#faq-lessons">Lesson Questions</a></li>
+                </ul>
+
+                <div id="faq-general">
+                    <p>
+                        Have questions about our swimming programs?
+                        Explore the answers below or contact our team.
+                    </p>
+
+                    <!-- Component 2: jQuery UI Accordion -->
+                    <div id="faq-accordion">
+                        <h3>Where can I find your locations?</h3>
+                        <div>
+                            <p>
+                                Visit our
+                                <a href="locations.html">Locations page</a>
+                                to find a nearby facility.
+                            </p>
+                        </div>
+
+                        <h3>How can I register?</h3>
+                        <div>
+                            <p>
+                                Visit our
+                                <a href="signin.html">Register / Sign In page</a>
+                                to get started.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faq-lessons">
+                    <p id="faq-loading">Loading lesson FAQs...</p>
+                    <div id="ajax-faq-content"></div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Shared footer -->
@@ -200,7 +249,11 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
