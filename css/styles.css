@@ -1246,3 +1246,220 @@ img {
         padding: 30px 22px;
     }
 }
+
+
+
+/* ========================================
+   Shared footer for all Splashes pages
+======================================== */
+
+.shared-footer {
+    width: 100%;
+    background-color: #f1f0ef;
+    background-image: url("../images/footer-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.shared-footer-inner {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 30px 24px 24px;
+}
+
+.shared-footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.shared-footer-logo img {
+    display: block;
+    width: 165px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.shared-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.shared-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.shared-footer-links a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.shared-footer-links a:hover {
+    color: #03b1f4;
+}
+
+
+.shared-footer-social {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.shared-footer-social .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.shared-footer-social .social-link:hover {
+    opacity: 0.75;
+}
+
+.shared-footer-social .linkedin {
+    background-color: #0877a9;
+}
+
+.shared-footer-social .instagram {
+    background-color: #656565;
+}
+
+.shared-footer-social .twitter {
+    background-color: #21c9e8;
+}
+
+.shared-footer-social .yelp {
+    background-color: #d90020;
+}
+
+.shared-footer-social .facebook {
+    background-color: #68a9ef;
+}
+
+.shared-footer-social .youtube {
+    background-color: #d90020;
+}
+
+
+.shared-footer-regions {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+    text-align: center;
+}
+
+.shared-footer-regions > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.shared-footer-regions strong {
+    font-size: 10px;
+}
+
+.shared-footer-regions a {
+    color: #555;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+.shared-footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 22px;
+}
+
+.shared-footer-sponsors {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.shared-footer-sponsors img {
+    display: block;
+    width: auto;
+    max-width: 125px;
+    max-height: 55px;
+    object-fit: contain;
+}
+
+.shared-footer-copyright {
+    margin: 0;
+    text-align: right;
+    line-height: 1.8;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+/* Responsive footer */
+@media (max-width: 767.98px) {
+    .shared-footer-inner {
+        padding: 25px 18px;
+    }
+
+    .shared-footer-logo {
+        margin-bottom: 25px;
+    }
+
+    .shared-footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 22px;
+    }
+
+    .shared-footer-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .shared-footer-regions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 22px;
+        padding: 22px 0;
+    }
+
+    .shared-footer-bottom {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .shared-footer-sponsors {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .shared-footer-sponsors img {
+        max-width: 100px;
+        max-height: 45px;
+    }
+
+    .shared-footer-copyright {
+        text-align: center;
+    }
+}
